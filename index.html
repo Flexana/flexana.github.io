@@ -9,66 +9,90 @@
   <link rel="stylesheet" href="assets/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
+  <header class="hero">
     <div class="container">
-      <div class="profile-photo">
-        <img src="assets/photo.jpg" alt="Photo du CTO">
-      </div>
-      <div class="header-content">
-        <h1>CTO Spécialisé dans l'Écosystème JavaScript</h1>
-        <p>Expert en développement mobile & web, avec plus de 15 ans d'expérience. Innovant, efficace et toujours à la recherche de solutions robustes pour un impact immédiat.</p>
+      <div class="hero-content">
+        <div class="profile-photo">
+          <img src="assets/photo.jpg" alt="Photo du CTO">
+        </div>
+        <div class="text">
+          <h1>CTO Spécialisé dans l'Écosystème JavaScript</h1>
+          <p>15 ans d'expérience en développement web & mobile. Expert TypeScript, React, Kubernetes, avec une approche centrée sur le produit et l'efficacité.</p>
+          <a href="#contact" class="btn-primary">Travaillons Ensemble</a>
+        </div>
       </div>
     </div>
   </header>
 
   <section class="about">
     <div class="container">
-      <h2>À Propos</h2>
-      <p>Fort de plus de 15 ans dans le développement logiciel, j'ai contribué à des projets variés allant des applications web complexes aux solutions mobiles innovantes en React Native. Je suis passionné par les bonnes pratiques de développement, comme le <strong>Domain-Driven Design (DDD)</strong> et le <strong>Test-Driven Development (TDD)</strong>, qui garantissent la qualité et la maintenabilité des produits livrés.</p>
-      <p>Mon expertise couvre l'écosystème JavaScript, avec une maîtrise approfondie de <strong>TypeScript</strong>, <strong>React</strong>, <strong>React Native</strong> pour le front-end et <strong>Kubernetes</strong> pour le déploiement. J’utilise <strong>GitHub Actions</strong> pour orchestrer un pipeline de déploiement continu et assurer des livraisons rapides mais stables.</p>
-      <p>Ma philosophie : <em>Deliver short but fast</em> – itérer rapidement, livrer des versions pour obtenir des feedbacks et s'assurer que les solutions répondent parfaitement aux attentes du client.</p>
+      <h2>À Propos de Moi</h2>
+      <div class="about-content">
+        <p>Je suis un passionné de technologies avec une spécialisation en <strong>TypeScript</strong>, <strong>React</strong>, et <strong>React Native</strong>. Mon expérience dans la gestion des équipes techniques m'a permis de développer des solutions robustes et évolutives. Je me concentre sur la livraison rapide avec une attention particulière aux <strong>bonnes pratiques</strong>, telles que le <strong>DDD</strong> et le <strong>TDD</strong>.</p>
+        <p>Ma devise est simple : <strong>livrer vite et bien</strong> pour obtenir des retours rapides et ajuster les fonctionnalités en fonction des besoins réels du client.</p>
+      </div>
     </div>
   </section>
 
   <section class="skills">
     <div class="container">
-      <h2>Compétences Clés</h2>
-      <ul>
-        <li><strong>JavaScript & TypeScript</strong> : Expertise dans le développement frontend avec React et React Native.</li>
-        <li><strong>Architecture & Scalabilité</strong> : Mise en place de solutions évolutives et performantes avec Kubernetes.</li>
-        <li><strong>Déploiement Continu</strong> : Automatisation des pipelines CI/CD avec GitHub Actions.</li>
-        <li><strong>Pratiques de Développement</strong> : Partisan du DDD et TDD pour des applications robustes.</li>
-        <li><strong>Lead Technique</strong> : Gestion et accompagnement d’équipes de développeurs vers l’excellence.</li>
-      </ul>
+      <h2>Compétences</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>JavaScript & TypeScript</h3>
+          <p>Développement front-end avec une expertise dans React et React Native pour des expériences utilisateur fluides et performantes.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Kubernetes</h3>
+          <p>Mise en place et gestion d'environnements évolutifs avec Kubernetes pour assurer une infrastructure robuste.</p>
+        </div>
+        <div class="skill-card">
+          <h3>CI/CD avec GitHub Actions</h3>
+          <p>Automatisation complète du déploiement avec GitHub Actions pour garantir un cycle de développement continu et fiable.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Lead Technique</h3>
+          <p>Accompagnement d'équipes de développement pour la livraison de produits de qualité, à la fois techniques et fonctionnels.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="testimonials">
     <div class="container">
-      <h2>Ils Parlent de Lui</h2>
-      <blockquote>
-        <p>“Un CTO avec une vision claire, capable de transformer des idées complexes en solutions concrètes et opérationnelles.”</p>
-        <cite>— Jean Dupont, Ancien collègue chez TechCorp</cite>
-      </blockquote>
-      <blockquote>
-        <p>“Son approche pragmatique et sa maîtrise technique ont fait toute la différence dans nos projets mobiles.”</p>
-        <cite>— Marie Martin, Directrice Produit chez InnovApp</cite>
-      </blockquote>
-      <blockquote>
-        <p>“Un leader qui sait allier vitesse d'exécution et qualité. Toujours à l'écoute, il comprend les enjeux business comme personne.”</p>
-        <cite>— Paul Leroy, CEO de Startup XYZ</cite>
-      </blockquote>
+      <h2>Témoignages</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p>“Un CTO exceptionnel qui combine une expertise technique pointue avec une vision produit claire.”</p>
+          <cite>— Jean Dupont, TechCorp</cite>
+        </div>
+        <div class="testimonial-card">
+          <p>“Son pragmatisme et son savoir-faire nous ont permis d'atteindre des résultats au-delà de nos attentes.”</p>
+          <cite>— Marie Martin, InnovApp</cite>
+        </div>
+        <div class="testimonial-card">
+          <p>“Un leader inspirant qui sait toujours trouver les solutions les plus adaptées en un temps record.”</p>
+          <cite>— Paul Leroy, Startup XYZ</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Intéressé par une collaboration ? Je suis disponible pour discuter de vos projets et voir comment nous pouvons travailler ensemble pour atteindre vos objectifs.</p>
+      <a href="mailto:cto@exemple.com" class="btn-secondary">Contactez-moi</a>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>Disponible pour de nouveaux projets. N'hésitez pas à me contacter pour discuter de vos besoins.</p>
-      <a href="mailto:cto@exemple.com" class="contact-btn">Contactez-moi</a>
+      <p>© 2024 CTO JavaScript | Tous droits réservés</p>
     </div>
   </footer>
 </body>
