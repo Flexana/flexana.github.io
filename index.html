@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Présentation Professionnelle | CTO JavaScript</title>
+  <title>CTO JavaScript | Expert en Développement Web & Mobile</title>
   <link rel="stylesheet" href="assets/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,88 +13,118 @@
 </head>
 
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">CTO JavaScript</a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">À Propos</a></li>
+        <li><a href="#skills" class="nav-link">Compétences</a></li>
+        <li><a href="#testimonials" class="nav-link">Témoignages</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
   <header class="hero">
     <div class="container">
       <div class="hero-content">
-        <div class="profile-photo">
-          <img src="assets/photo.jpg" alt="Photo du CTO">
-        </div>
         <div class="text">
-          <h1>CTO Spécialisé dans l'Écosystème JavaScript</h1>
-          <p>15 ans d'expérience en développement web & mobile. Expert TypeScript, React, Kubernetes, avec une approche centrée sur le produit et l'efficacité.</p>
-          <a href="#contact" class="btn-primary">Travaillons Ensemble</a>
+          <h1>CTO Spécialisé en Écosystème JavaScript</h1>
+          <p>Plus de 15 ans d'expérience en développement web & mobile. Expert TypeScript, React, Kubernetes avec une approche axée sur le produit et l'efficacité.</p>
+          <a href="#about" class="btn-primary">Découvrez mon parcours</a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/hero-image.png" alt="Développement web et mobile">
         </div>
       </div>
     </div>
   </header>
 
-  <section class="about">
+  <!-- À Propos Section -->
+  <section id="about" class="about">
     <div class="container">
       <h2>À Propos de Moi</h2>
       <div class="about-content">
-        <p>Je suis un passionné de technologies avec une spécialisation en <strong>TypeScript</strong>, <strong>React</strong>, et <strong>React Native</strong>. Mon expérience dans la gestion des équipes techniques m'a permis de développer des solutions robustes et évolutives. Je me concentre sur la livraison rapide avec une attention particulière aux <strong>bonnes pratiques</strong>, telles que le <strong>DDD</strong> et le <strong>TDD</strong>.</p>
-        <p>Ma devise est simple : <strong>livrer vite et bien</strong> pour obtenir des retours rapides et ajuster les fonctionnalités en fonction des besoins réels du client.</p>
+        <p>Avec une passion pour la technologie et une expertise dans <strong>JavaScript</strong> et <strong>React Native</strong>, j'ai piloté des équipes techniques et livré des solutions évolutives et performantes. Mon approche de <strong>livraison rapide</strong> avec un feedback client constant garantit que le produit reste aligné aux besoins réels.</p>
+        <a href="#skills" class="btn-secondary">Découvrez mes compétences</a>
+      </div>
+      <div class="about-image">
+        <img src="assets/about-image.png" alt="Équipe de développement collaborant">
       </div>
     </div>
   </section>
 
-  <section class="skills">
+  <!-- Compétences Section -->
+  <section id="skills" class="skills">
     <div class="container">
-      <h2>Compétences</h2>
+      <h2>Compétences Clés</h2>
       <div class="skills-grid">
         <div class="skill-card">
           <h3>JavaScript & TypeScript</h3>
-          <p>Développement front-end avec une expertise dans React et React Native pour des expériences utilisateur fluides et performantes.</p>
+          <p>Création d'applications web modernes avec React et des applications mobiles en React Native.</p>
+          <img src="assets/skills-js.png" alt="JavaScript Logo">
         </div>
         <div class="skill-card">
           <h3>Kubernetes</h3>
-          <p>Mise en place et gestion d'environnements évolutifs avec Kubernetes pour assurer une infrastructure robuste.</p>
+          <p>Gestion d'infrastructure scalable avec Kubernetes pour un déploiement continu et fiable.</p>
+          <img src="assets/skills-k8s.png" alt="Kubernetes Logo">
         </div>
         <div class="skill-card">
           <h3>CI/CD avec GitHub Actions</h3>
-          <p>Automatisation complète du déploiement avec GitHub Actions pour garantir un cycle de développement continu et fiable.</p>
+          <p>Automatisation des pipelines de déploiement avec GitHub Actions pour assurer une intégration et livraison continues.</p>
+          <img src="assets/skills-ci.png" alt="CI/CD Logo">
         </div>
         <div class="skill-card">
           <h3>Lead Technique</h3>
-          <p>Accompagnement d'équipes de développement pour la livraison de produits de qualité, à la fois techniques et fonctionnels.</p>
+          <p>Encadrement d'équipes de développeurs pour une livraison rapide et de haute qualité des produits.</p>
+          <img src="assets/skills-lead.png" alt="Lead Technique">
         </div>
       </div>
+      <a href="#testimonials" class="btn-secondary">Ce que disent mes collègues</a>
     </div>
   </section>
 
-  <section class="testimonials">
+  <!-- Témoignages Section -->
+  <section id="testimonials" class="testimonials">
     <div class="container">
       <h2>Témoignages</h2>
       <div class="testimonials-grid">
         <div class="testimonial-card">
-          <p>“Un CTO exceptionnel qui combine une expertise technique pointue avec une vision produit claire.”</p>
+          <p>“Un CTO exceptionnel avec une expertise technique remarquable, capable de transformer des idées en solutions concrètes.”</p>
           <cite>— Jean Dupont, TechCorp</cite>
         </div>
         <div class="testimonial-card">
-          <p>“Son pragmatisme et son savoir-faire nous ont permis d'atteindre des résultats au-delà de nos attentes.”</p>
+          <p>“Il a su mener nos projets mobiles au succès grâce à sa méthodologie agile et sa compréhension des besoins produit.”</p>
           <cite>— Marie Martin, InnovApp</cite>
         </div>
         <div class="testimonial-card">
-          <p>“Un leader inspirant qui sait toujours trouver les solutions les plus adaptées en un temps record.”</p>
+          <p>“Un leader technique qui combine rapidité d'exécution et qualité. Toujours à l'écoute des enjeux business.”</p>
           <cite>— Paul Leroy, Startup XYZ</cite>
         </div>
       </div>
+      <a href="#contact" class="btn-secondary">Contactez-moi</a>
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact" class="contact">
     <div class="container">
-      <h2>Contact</h2>
-      <p>Intéressé par une collaboration ? Je suis disponible pour discuter de vos projets et voir comment nous pouvons travailler ensemble pour atteindre vos objectifs.</p>
-      <a href="mailto:cto@exemple.com" class="btn-secondary">Contactez-moi</a>
+      <h2>Contactez-moi</h2>
+      <p>Vous avez un projet en tête ou souhaitez collaborer ? Je suis disponible pour discuter de vos besoins.</p>
+      <a href="mailto:cto@exemple.com" class="btn-primary">Discutons ensemble</a>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>© 2024 CTO JavaScript | Tous droits réservés</p>
     </div>
   </footer>
+
+  <script src="assets/script.js"></script>
 </body>
 
 </html>
