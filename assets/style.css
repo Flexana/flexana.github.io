@@ -1,62 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-.container {
-  width: 85%;
-  margin: 0 auto;
-}
-
-.hero {
-  background: linear-gradient(120deg, #4C6EF5, #AC66CC);
-  color: white;
-  padding: 50px 0;
-  text-align: center;
-}
-
-.hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.profile-photo img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-}
-
-.btn-primary {
-  padding: 12px 30px;
-  background-color: #ff5722;
-  color: white;
   text-decoration: none;
   border-radius: 30px;
   font-size: 1rem;
 }
 
-.btn-primary:hover {
-  background-color: #e64a19;
+.btn-primary:hover,
+.btn-secondary:hover {
+  opacity: 0.9;
 }
 
 .about, .skills, .testimonials, .contact {
@@ -67,35 +16,31 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
-.about h2, .skills h2, .testimonials h2, .contact h2 {
+.about-content {
   text-align: center;
-  margin-bottom: 30px;
-  color: #4C6EF5;
+  margin-bottom: 20px;
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+.about-image,
+.hero-image {
+  display: none; /* Hidden initially for animation */
 }
 
-.skill-card {
-  background-color: #f1f1f1;
-  padding: 20px;
-  border-radius: 8px;
+.about-image img,
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.skill-card h3 {
-  color: #ff5722;
-  margin-bottom: 10px;
-}
-
+.skills-grid,
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
+.skill-card,
 .testimonial-card {
   background-color: #f1f1f1;
   padding: 20px;
@@ -103,36 +48,23 @@ body {
   text-align: center;
 }
 
-.testimonial-card p {
-  font-style: italic;
+.skill-card img,
+.testimonial-card img {
+  width: 80px;
+  height: auto;
+  margin-top: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover img,
+.testimonial-card:hover img {
+  transform: scale(1.1);
 }
 
 .testimonial-card cite {
   margin-top: 15px;
   display: block;
   color: #666;
-}
-
-.contact {
-  text-align: center;
-}
-
-.contact p {
-  margin-bottom: 20px;
-  font-size: 1.1rem;
-}
-
-.btn-secondary {
-  padding: 12px 30px;
-  background-color: #4C6EF5;
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  font-size: 1rem;
-}
-
-.btn-secondary:hover {
-  background-color: #3b5bdb;
 }
 
 footer {
